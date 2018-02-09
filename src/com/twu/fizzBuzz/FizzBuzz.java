@@ -20,5 +20,10 @@ public class FizzBuzz {
         return counter;
     }
 
+    public String classification(int number) {
+        return "Is a number";
+
+    }
+
     // funcao traducao
 }
