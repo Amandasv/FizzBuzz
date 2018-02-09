@@ -6,7 +6,7 @@ import org.junit.Test;
 public class FizzBuzzTest {
 
     @Test
-    public void shouldCountFromOneToMaxNumber(){
+    public void countsFromOneToMaxNumber(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         int countToHundred = fizzBuzz.countTo(100);
         Assert.assertEquals(countToHundred, 100);
