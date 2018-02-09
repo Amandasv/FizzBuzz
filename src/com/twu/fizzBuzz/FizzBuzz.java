@@ -18,4 +18,6 @@ public class FizzBuzz {
         }
         return counter;
     }
+
+    // funcao traducao
 }
