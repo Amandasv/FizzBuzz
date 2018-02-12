@@ -24,10 +24,17 @@ public class FizzBuzz {
         }
     }
 
-    public String classification(int number) {
-        return "Is a number";
+    public static String classification(int number) {
+        String classification = Integer.toString(number);
 
+        if (number % 5 == 0 && number % 3 == 0)  {
+            classification = "FizzBuzz";
+        } else if (number % 3 == 0) {
+            classification = "Fizz";
+        } else if(number % 5 == 0)  {
+            classification = "Buzz";
+        }
+
+        return classification;
     }
-
-    // funcao traducao
 }
