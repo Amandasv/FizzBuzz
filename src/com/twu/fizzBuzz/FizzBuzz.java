@@ -1,15 +1,14 @@
 package com.twu.fizzBuzz;
 
 public class FizzBuzz {
-    public static void main(String[] args) {
-        Printer printer = new Printer();
 
-        printer.print("FizzBuzz");
-        countTo(5);
+    private Printer printer;
 
+    public FizzBuzz(Printer printer) {
+        this.printer = printer;
     }
 
-    public static int countTo(int numberMax) {
+    public static void main(String[] args) {
         Printer printer = new Printer();
         int counter = 0;
 
