@@ -10,13 +10,18 @@ public class FizzBuzz {
 
     public static void main(String[] args) {
         Printer printer = new Printer();
-        int counter = 0;
 
+        printer.print("FizzBuzz Exercise \n\n");
+        FizzBuzz fizzBuzz = new FizzBuzz(printer);
+
+        fizzBuzz.generate(100);
+
+    }
+
+    public void generate(int numberMax) {
         for (int position = 1; position <= numberMax ; position++) {
-            printer.print(Integer.toString(position));
-            counter++;
+            printer.print(classification(position) + "\n");
         }
-        return counter;
     }
 
     public String classification(int number) {
